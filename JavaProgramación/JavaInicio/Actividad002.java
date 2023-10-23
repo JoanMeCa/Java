@@ -15,5 +15,6 @@ public class Actividad002 {
             int numero1 = Integer.parseInt(input.nextLine());
             int numero2 = Integer.parseInt(input.nextLine());
             System.out.println("Has introducido: " + numero1 + " y " + numero2);
+            input.close();
     }
 }

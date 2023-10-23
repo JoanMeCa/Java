@@ -18,5 +18,6 @@ public static void main(String[] args) {
         } else {
             System.out.println(caracter + " está en minúscula.");
         }
+        scanner.close();
     }
 }

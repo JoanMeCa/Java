@@ -19,5 +19,6 @@ public class Actividad011 {
         } else {
             System.out.println(num + " es un número impar.");
         }
+        scanner.close();
     }
 }

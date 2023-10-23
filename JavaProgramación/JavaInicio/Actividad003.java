@@ -16,5 +16,6 @@ public class Actividad003 {
             int doble = numero * 2;
             int triple = numero * 3;
             System.out.println("El doble de " + numero + " es " + doble + " y el triple es " + triple);
+            input.close();
     }
 }

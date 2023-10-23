@@ -16,5 +16,6 @@ public class Actividad004 {
             int numero = Integer.parseInt(input.nextLine());
             double faren = (numero * 9/5) + 32;
             System.out.println(+ numero + " grados centígrados son " + faren + " grados en farenheit ");
+            input.close();
     }
 }
