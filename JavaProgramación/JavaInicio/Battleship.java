@@ -18,8 +18,10 @@ public class Battleship {
         while (intentos < 5) {
             System.out.println("Introduzca el eje x: ");
             int x = input.nextInt();
+            x--;
             System.out.println("Introduzca el eje y: ");
             int y = input.nextInt();
+            y--;
             String combinacion = x + "," + y;
             if (x >= 0 && x < tabla[0].length && y >= 0 && y < tabla.length) {
                 if (tabla[y][x]) {
@@ -35,7 +37,7 @@ public class Battleship {
                     intentos++;
                 }
             } else {
-                System.out.println("Los valores introducidos están fuera de rango. Deben estar entre 0 y " + (tabla.length - 1) + ".");
+                System.out.println("Los valores introducidos están fuera de rango. Deben estar entre 1 y " + (tabla.length) + ".");
             }
             if (aciertos == 9) {
                 System.out.println("Has hundido todas las naves, felicidades!!!");
