@@ -114,6 +114,26 @@ public class MonkeyIsland {
             int Respuestaal = random.nextInt(MaloContraRonda.length);
             int Maloganal = random.nextInt(MaloGana.length);
             int Maloloseal = random.nextInt(MaloPierde.length);
+            if (Lose > 2) {
+                System.out.println(Malo + ": Ríndete " + Bueno + ", nunca podrás vencerme en mi terreno.");
+                System.out.println(Bueno + ": ¡NO! No puedo rendirme, tengo que seguir... luchando...");
+                System.out.println("Tus ojos se cierran y solo ves oscuridad");
+                System.out.println("Has perdido");
+                System.out.println("Si tan solo tuvieras una oportunidad");
+                System.exit(0);
+            }
+            if (Win > 2) {
+                System.out.println(Malo + ": ¡UGH...! ¿Como es posible...?");
+                System.out.println(Bueno + ": Con esto, he vengado la muerte de mi padre...");
+                System.out.println(Malo + ": Iluso... Yo no maté a tu padre...");
+                System.out.println(Bueno + ": ¡Mentiras! Si no fuiste tú... ¿quién?");
+                System.out.println(Malo + ": Tu... madre...");
+                System.out.println("Has derrotado al hombre que mató a tu padre, pero sus últimas palabras traen una revelación trágica");
+                System.out.println("Tu aventura no ha terminado");
+                System.out.println("Tienes un nuevo objetivo...");
+                System.out.println("Tu madre");
+                System.exit(0);
+            }
             if (Primero == 0) {
                 System.out.println("Tu empiezas!");
                 System.out.println("Escoge tu puya inicial: ");
@@ -173,26 +193,6 @@ public class MonkeyIsland {
                     Lose++;
                     Primero--;
                 }
-            }
-            if (Lose > 2) {
-                System.out.println(Malo + ": Ríndete " + Bueno + ", nunca podrás vencerme en mi terreno.");
-                System.out.println(Bueno + ": ¡NO! No puedo rendirme, tengo que seguir... luchando...");
-                System.out.println("Tus ojos se cierran y solo ves oscuridad");
-                System.out.println("Has perdido");
-                System.out.println("Si tan solo tuvieras una oportunidad");
-                System.exit(0);
-            }
-            if (Win > 2) {
-                System.out.println(Malo + ": ¡UGH...! ¿Como es posible...?");
-                System.out.println(Bueno + ": Con esto, he vengado la muerte de mi padre...");
-                System.out.println(Malo + ": Iluso... Yo no maté a tu padre...");
-                System.out.println(Bueno + ": ¡Mentiras! Si no fuiste tú... ¿quién?");
-                System.out.println(Malo + ": Tu... madre...");
-                System.out.println("Has derrotado al hombre que mató a tu padre, pero sus últimas palabras traen una revelación trágica");
-                System.out.println("Tu aventura no ha terminado");
-                System.out.println("Tienes un nuevo objetivo...");
-                System.out.println("Tu madre");
-                System.exit(0);
             }
         }
         input.close();
