@@ -17,6 +17,16 @@ public class MarvelSnap {
         spiderman.printInfo();
         superman.printInfo();
         input.close();
+        Coleccion marvel = new Coleccion();
+        marvel.cartas = new Carta[]{spiderman};
+        marvel.owner = "Marvel";
+        marvel.fecha = "1962";
+        Coleccion dc = new Coleccion();
+        dc.cartas = new Carta[]{superman};
+        dc.owner = "DC";
+        dc.fecha = "1938";
+        marvel.printCreador();
+        dc.printCreador();
     }
 
 }
