@@ -9,7 +9,16 @@ public class Carta {
         //Ints
         int fuerza; // 0 a 10
         int vida; // 0 10
-        //public Carta(String nombre, int fuerza, int vida) {}
+        public Carta(String nombre, String descripcion ,int fuerza, int vida) {
+            this.nombre = nombre;
+            this.descripcion = descripcion;
+            this.fuerza = fuerza;
+            this.vida = vida;
+            this.rareza = "Común";
+        }
+        public Carta(){
+            this.rareza = "Común";
+        }
         public void printInfo() {
             System.out.println(nombre + " - " + descripcion);
             System.out.println("Rareza: " + rareza);
