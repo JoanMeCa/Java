@@ -71,11 +71,6 @@ public class MonkeyIsland {
             int cantidadNumeros = 4;
             int rangoMinimo = 0;
             int rangoMaximo = BuenoInicio.length - 1;
-
-            if (rangoMaximo - rangoMinimo + 1 < cantidadNumeros) {
-                System.out.println("No es posible generar " + cantidadNumeros + " números sin repetir en el rango especificado.");
-                return;
-            }
             ArrayList<Integer> numerosGenerados = new ArrayList<>();
             while (numerosGenerados.size() < cantidadNumeros) {
                 int numeroAleatorio = random.nextInt(rangoMaximo - rangoMinimo + 1) + rangoMinimo;
@@ -115,15 +110,15 @@ public class MonkeyIsland {
             int Maloganal = random.nextInt(MaloGana.length);
             int Maloloseal = random.nextInt(MaloPierde.length);
             if (Lose > 2) {
-                System.out.println(Malo + ": Ríndete " + Bueno + ", nunca podrás vencerme en mi terreno.");
+                System.out.println("\n" + Malo + ": Ríndete " + Bueno + ", nunca podrás vencerme en mi terreno.");
                 System.out.println(Bueno + ": ¡NO! No puedo rendirme, tengo que seguir... luchando...");
                 System.out.println("Tus ojos se cierran y solo ves oscuridad");
                 System.out.println("Has perdido");
-                System.out.println("Si tan solo tuvieras una oportunidad");
+                System.out.println("Si tan solo tuvieras otra oportunidad...");
                 System.exit(0);
             }
             if (Win > 2) {
-                System.out.println(Malo + ": ¡UGH...! ¿Como es posible...?");
+                System.out.println("\n" + Malo + ": ¡UGH...! ¿Como es posible...?");
                 System.out.println(Bueno + ": Con esto, he vengado la muerte de mi padre...");
                 System.out.println(Malo + ": Iluso... Yo no maté a tu padre...");
                 System.out.println(Bueno + ": ¡Mentiras! Si no fuiste tú... ¿quién?");
@@ -135,8 +130,8 @@ public class MonkeyIsland {
                 System.exit(0);
             }
             if (Primero == 0) {
-                System.out.println("Tu empiezas!");
-                System.out.println("Escoge tu puya inicial: ");
+                System.out.println("\nTú empiezas!");
+                System.out.println("Escoge tu puya inicial: \n");
                 System.out.println("1. " + BuenoInicioRonda[0]);
                 System.out.println("2. " + BuenoInicioRonda[1]);
                 System.out.println("3. " + BuenoInicioRonda[2]);
@@ -145,7 +140,7 @@ public class MonkeyIsland {
                 EleccionBueno--;
                 System.out.println(Bueno + ": " + BuenoInicioRonda[EleccionBueno]);
                 System.out.println(Malo + ": " + MaloContraRonda[Respuestaal]);
-                System.out.println("Como responderás?");
+                System.out.println("Como responderás? \n");
                 System.out.println("1. " + BuenoRemateRonda[0]);
                 System.out.println("2. " + BuenoRemateRonda[1]);
                 System.out.println("3. " + BuenoRemateRonda[2]);
@@ -169,9 +164,9 @@ public class MonkeyIsland {
                 }
             }
             if (Primero == 1) {
-                System.out.println("El rival empieza!");
+                System.out.println("\nEl rival empieza!");
                 System.out.println(Malo + ": " + MaloInicioRonda[Respuestaal]);
-                System.out.println("Como contraatacas?");
+                System.out.println("Como contraatacas? \n");
                 System.out.println("1. " + BuenoContraRonda[0]);
                 System.out.println("2. " + BuenoContraRonda[1]);
                 System.out.println("3. " + BuenoContraRonda[2]);
