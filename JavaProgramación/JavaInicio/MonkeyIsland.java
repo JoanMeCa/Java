@@ -1,8 +1,11 @@
 package JavaInicio;
 
 import java.util.ArrayList;
+
 import java.util.Random;
+
 import java.util.Scanner;
+
 
 public class MonkeyIsland {
     public static void main(String[] args) {
@@ -67,6 +70,7 @@ public class MonkeyIsland {
         System.out.println(Malo + ": Ah, " + Bueno + ", volvemos a encontrarnos...");
         System.out.println(Bueno + ": Y esta vez, no saldrás de aquí con vida...");
         System.out.println(Malo + ": Veamos si eres más que solo palabras... ¡EN GUARDIA!");
+        
         while (Jugar == true) {
             int cantidadNumeros = 4;
             int rangoMinimo = 0;
@@ -86,6 +90,7 @@ public class MonkeyIsland {
                 numero3 = numerosGenerados.get(2);
                 numero4 = numerosGenerados.get(3);
             }
+
         String[] BuenoInicioRonda = {BuenoInicio[numero1], 
                                 BuenoInicio[numero2], 
                                 BuenoInicio[numero3],
