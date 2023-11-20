@@ -38,6 +38,7 @@ public class Coleccion {
             i++;
         }
     }
+    
     public void pintarMasFuerte(int fuerza){
         Superheroe masfuerte = null;
         for (int i = 0; i < superheroes.length; i++) {
@@ -49,6 +50,7 @@ public class Coleccion {
         }
         System.out.println("La carta más fuerte de la colección es " + masfuerte.nombre);
     }
+
     public void pintarMasVivo(int vida){
         Superheroe masvivo = null;
         for (int i = 0; i < superheroes.length; i++) {
@@ -60,6 +62,7 @@ public class Coleccion {
         }
         System.out.println("La carta más fuerte de la colección es " + masvivo.nombre + " con un valor de " + masvivo.vida);
     }
+
     public int contarCartasLegendarias() {
         int contador = 0;
         for (int i = 0; i < superheroes.length; i++) {

@@ -16,7 +16,7 @@ public class ColeccionCartasFP {
         //Per fer:
         //Crida a un metode dins Coleccio, que pinti amb un println()
         //quin es el superheroe amb major vida i quin valor te vida
-        marvel.pintarMasVivo(0);
+        marvel.pintarMasVivo(0); //Lo mismo que con lo anterior
         //Per fer: 
         //Crida a un metode dins Coleccio, que retorni amb un return 
         //quantes cartes "legendaria" hi ha a la nostra coleccio
