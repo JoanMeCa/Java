@@ -34,7 +34,8 @@ class Equipo {
     public String getNombreEquipo() {
         return nombreEquipo;
     }
-        public String getnumeroContacto() {
+    
+    public String getnumeroContacto() {
         return numeroContacto;
     }
 }
