@@ -1,5 +1,3 @@
-package Slay_The_Spire_Electric_Bogaloo;
-
 public class Carta {
     private int costoEnergia;
     private String efecto;

@@ -1,5 +1,3 @@
-package Slay_The_Spire_Electric_Bogaloo;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -56,7 +54,7 @@ public class Juego {
             acidSlime.realizarAccion();
             if (jugador.getPuntosVida() <= 0) {
                 System.out.println("¡Has perdido! The Spire esta decepcionada con tu ineptitud.");
-                break; // Salir del bucle si el jugador ha perdido
+                System.exit(0); // Salir del bucle si el jugador ha perdido
             }
 
         }
@@ -83,7 +81,7 @@ public class Juego {
             jawWorm.realizarAccion();
             if (jugador.getPuntosVida() <= 0) {
                 System.out.println("¡Has perdido! The Spire se nutre con tu muerte.");
-                break; // Salir del bucle si el jugador ha perdido
+                System.exit(0); // Salir del bucle si el jugador ha perdido
             }
 
         }

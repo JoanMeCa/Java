@@ -1,5 +1,3 @@
-package Slay_The_Spire_Electric_Bogaloo;
-
 import java.util.Random;
 import java.util.List;
 import java.util.ArrayList;
