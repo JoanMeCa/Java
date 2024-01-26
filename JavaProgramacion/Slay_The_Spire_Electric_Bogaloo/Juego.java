@@ -93,7 +93,7 @@ public class Juego {
         }
         System.out.println("Al abrir la puerta, no ves más que una pila de placas de metal...");
         scanner.nextLine();
-        System.out.println("Mientras investiga, ves a la pila moverse, y empieza a atacarte!");
+        System.out.println("Mientras investigas, ves a la pila moverse, y empieza a atacarte!");
         scanner.nextLine();
 
         while (jugador.getPuntosVida() > 0 && theGuardian.getPuntosVida() > 0) { //Problemas con el boss
@@ -112,9 +112,6 @@ public class Juego {
                 System.out.println("Pero The Spire prosigue con su camino.");
                 break; // Salir del bucle si el jugador ha perdido
             }
-
         }
-
-
     }
 }
