@@ -48,6 +48,19 @@ public class AdivinarNumeroFrame extends JFrame {
                     "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
+        boolean esNumero = true;
+        for (int i = 0; i < input.length(); i++) {
+            if (!Character.isDigit(input.charAt(i))) {
+                esNumero = false;
+                break;
+            }
+        }
+    
+        if (!esNumero) {
+            JOptionPane.showMessageDialog(this, "Por favor, introduce un número válido.",
+                    "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
         int numeroelegido = Integer.parseInt(input);
         if (numeroelegido < 1 || numeroelegido > 100) {
             JOptionPane.showMessageDialog(this, "Por favor, introduce un número entre 1 y 100.",
