@@ -93,7 +93,6 @@ public class AdivinarNumeroFrame extends JFrame {
         Text.setText("");
     }
     private void reiniciarJuego() {
-        // Generar un nuevo número secreto y restablecer los intentos
         numero = (int) (Math.random() * 100) + 1;
         intentos = 7;
     }
